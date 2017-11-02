@@ -17,11 +17,11 @@ import java.util.Scanner;
 public class AgendaManager {
 
 	private List<Rule> inputList = new ArrayList<Rule>();
-	int cycle = 0;
+	int cycle = 1;
 
 	// constructer of Agenda manager
 	public AgendaManager(int n) {
-		URL url = getClass().getResource("input1.txt");
+		URL url = getClass().getResource("test1.txt");
 
 		final String dir = System.getProperty("user.dir");
 		String max = null;
@@ -88,11 +88,11 @@ public class AgendaManager {
         
         
 		List<Rule> readLineList = new ArrayList<Rule>();
-		if (cycle == 0) {
+		if (cycle == 1) {
 			readLineList.add(new Rule());
 
 		}
-		cycle++;
+		
 		String[] currentLineArr = rulesStr.split("(\\)\\,)");
 		for (String s : currentLineArr) {
 			Rule r = new Rule();

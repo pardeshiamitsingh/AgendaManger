@@ -5,79 +5,149 @@ ACTIVATED RULES
 [ r2 - 2 ]
 EXECUTED RULE
 r15 - 15
-===========CYCLE 3===============
+===========CYCLE 2===============
 ACTIVATED RULES
 [ r2 - 2 ]
 EXECUTED RULE
 r20 - 20
-===========CYCLE 5===============
+===========CYCLE 3===============
 ACTIVATED RULES
 [ r2 - 2 ]
 EXECUTED RULE
 r100 - 100
-===========CYCLE 7===============
+===========CYCLE 4===============
 ACTIVATED RULES
 [ r0 - 0 ]
 EXECUTED RULE
 r2 - 2
-===========CYCLE 9===============
+===========CYCLE 5===============
 ACTIVATED RULES
 [ r103 - 100 ][ r102 - 100 ][ r0 - 0 ]
 EXECUTED RULE
 r100 - 100
-===========CYCLE 11===============
+===========CYCLE 6===============
 ACTIVATED RULES
 [ r104 - 100 ][ r102 - 100 ][ r0 - 0 ]
 EXECUTED RULE
 r103 - 100
-===========CYCLE 13===============
+===========CYCLE 7===============
 ACTIVATED RULES
 [ r105 - 100 ][ r102 - 100 ][ r0 - 0 ]
 EXECUTED RULE
 r104 - 100
-===========CYCLE 15===============
+===========CYCLE 8===============
 ACTIVATED RULES
 [ r102 - 100 ][ r28 - 28 ][ r19 - 19 ][ r02 - 0 ][ r0 - 0 ]
 EXECUTED RULE
 r105 - 100
-===========CYCLE 17===============
+===========CYCLE 9===============
 ACTIVATED RULES
 [ r35 - 35 ][ r28 - 28 ][ r19 - 19 ][ r02 - 0 ][ r0 - 0 ]
 EXECUTED RULE
 r102 - 100
-===========CYCLE 19===============
+===========CYCLE 10===============
 ACTIVATED RULES
 [ r28 - 28 ][ r19 - 19 ][ r20 - 20 ][ r02 - 0 ][ r0 - 0 ]
 EXECUTED RULE
 r35 - 35
-===========CYCLE 21===============
+===========CYCLE 11===============
 ACTIVATED RULES
 [ r20 - 20 ][ r19 - 19 ][ rule2 - 2 ][ r02 - 0 ][ r0 - 0 ]
 EXECUTED RULE
 r28 - 28
-===========CYCLE 23===============
+===========CYCLE 12===============
 ACTIVATED RULES
 [ r19 - 19 ][ r16 - 16 ][ r19 - 19 ][ r02 - 0 ][ r0 - 0 ][ rule2 - 2 ][ r02 - 0 ]
 EXECUTED RULE
 r80 - 80
-===========CYCLE 25===============
+===========CYCLE 13===============
 ACTIVATED RULES
 [ r19 - 19 ][ r16 - 16 ][ rule2 - 2 ][ r13 - 13 ][ r0 - 0 ][ r02 - 0 ][ r02 - 0 ]
 EXECUTED RULE
 r19 - 19
-===========CYCLE 27===============
+===========CYCLE 14===============
 ACTIVATED RULES
 [ r16 - 16 ][ r13 - 13 ][ r16 - 16 ][ r13 - 13 ][ r0 - 0 ][ r02 - 0 ][ r02 - 0 ]
 EXECUTED RULE
 r100 - 100
-===========CYCLE 29===============
+===========CYCLE 15===============
 ACTIVATED RULES
 [ r30 - 30 ][ r13 - 13 ][ r13 - 13 ][ r13 - 13 ][ r0 - 0 ][ r02 - 0 ][ r02 - 0 ][ r0 - 0 ][ r0 - 0 ]
 EXECUTED RULE
 r100 - 100
+===========CYCLE 16===============
+ACTIVATED RULES
+[ r88 - 88 ][ r13 - 13 ][ r13 - 13 ][ r02 - 0 ][ r13 - 13 ][ r02 - 0 ][ r02 - 0 ][ r0 - 0 ][ r0 - 0 ][ r0 - 0 ][ r02 - 0 ]
+EXECUTED RULE
+r99 - 99
+===========CYCLE 17===============
+ACTIVATED RULES
+[ r70 - 70 ][ r13 - 13 ][ r55 - 55 ][ r02 - 0 ][ r13 - 13 ][ r02 - 0 ][ r02 - 0 ][ r0 - 0 ][ r0 - 0 ][ r0 - 0 ][ r02 - 0 ][ r02 - 0 ]
+EXECUTED RULE
+r88 - 88
+===========CYCLE 18===============
+ACTIVATED RULES
+[ r55 - 55 ][ r13 - 13 ][ r45 - 45 ][ r02 - 0 ][ r13 - 13 ][ r02 - 0 ][ r02 - 0 ][ r0 - 0 ][ r0 - 0 ][ r0 - 0 ][ r02 - 0 ][ r02 - 0 ]
+EXECUTED RULE
+r70 - 70
+===========CYCLE 19===============
+ACTIVATED RULES
+[ r45 - 45 ][ r13 - 13 ][ rr1 - 0 ][ r02 - 0 ][ r13 - 13 ][ r02 - 0 ][ r02 - 0 ][ r0 - 0 ][ r0 - 0 ][ r0 - 0 ][ r02 - 0 ][ r02 - 0 ]
+EXECUTED RULE
+r55 - 55
+===========CYCLE 20===============
+ACTIVATED RULES
+[ r13 - 13 ][ r13 - 13 ][ rr1 - 0 ][ r02 - 0 ][ rr2 - 0 ][ r02 - 0 ][ r02 - 0 ][ r0 - 0 ][ r0 - 0 ][ r0 - 0 ][ r02 - 0 ][ r02 - 0 ]
+EXECUTED RULE
+r45 - 45
+===========CYCLE 21===============
+ACTIVATED RULES
+[ r13 - 13 ][ rr3 - 0 ][ rr1 - 0 ][ r02 - 0 ][ rr2 - 0 ][ r02 - 0 ][ r02 - 0 ][ r0 - 0 ][ r0 - 0 ][ r0 - 0 ][ r02 - 0 ][ r02 - 0 ]
+EXECUTED RULE
+r13 - 13
+===========CYCLE 22===============
+ACTIVATED RULES
+[ rr4 - 0 ][ rr3 - 0 ][ rr1 - 0 ][ r02 - 0 ][ rr2 - 0 ][ r02 - 0 ][ r02 - 0 ][ r0 - 0 ][ r0 - 0 ][ r0 - 0 ][ r02 - 0 ][ r02 - 0 ]
+EXECUTED RULE
+r13 - 13
+===========CYCLE 23===============
+ACTIVATED RULES
+[ rr5 - 0 ][ rr3 - 0 ][ rr1 - 0 ][ r02 - 0 ][ rr2 - 0 ][ r02 - 0 ][ r02 - 0 ][ r0 - 0 ][ r0 - 0 ][ r0 - 0 ][ r02 - 0 ][ r02 - 0 ]
+EXECUTED RULE
+rr4 - 0
+===========CYCLE 24===============
+ACTIVATED RULES
+[ rr6 - 0 ][ rr3 - 0 ][ rr1 - 0 ][ r02 - 0 ][ rr2 - 0 ][ r02 - 0 ][ r02 - 0 ][ r0 - 0 ][ r0 - 0 ][ r0 - 0 ][ r02 - 0 ][ r02 - 0 ]
+EXECUTED RULE
+rr5 - 0
+===========CYCLE 25===============
+ACTIVATED RULES
+[ rr7 - 0 ][ rr3 - 0 ][ rr1 - 0 ][ r02 - 0 ][ rr2 - 0 ][ r02 - 0 ][ r02 - 0 ][ r0 - 0 ][ r0 - 0 ][ r0 - 0 ][ r02 - 0 ][ r02 - 0 ]
+EXECUTED RULE
+rr6 - 0
+===========CYCLE 26===============
+ACTIVATED RULES
+[ rr8 - 0 ][ rr3 - 0 ][ rr1 - 0 ][ r02 - 0 ][ rr2 - 0 ][ r02 - 0 ][ r02 - 0 ][ r0 - 0 ][ r0 - 0 ][ r0 - 0 ][ r02 - 0 ][ r02 - 0 ]
+EXECUTED RULE
+rr7 - 0
+===========CYCLE 27===============
+ACTIVATED RULES
+[ rr9 - 0 ][ rr3 - 0 ][ rr1 - 0 ][ r02 - 0 ][ rr2 - 0 ][ r02 - 0 ][ r02 - 0 ][ r0 - 0 ][ r0 - 0 ][ r0 - 0 ][ r02 - 0 ][ r02 - 0 ]
+EXECUTED RULE
+rr8 - 0
+===========CYCLE 28===============
+ACTIVATED RULES
+[ rr10 - 0 ][ rr3 - 0 ][ rr1 - 0 ][ r02 - 0 ][ rr2 - 0 ][ r02 - 0 ][ r02 - 0 ][ r0 - 0 ][ r0 - 0 ][ r0 - 0 ][ r02 - 0 ][ r02 - 0 ]
+EXECUTED RULE
+rr9 - 0
+===========CYCLE 29===============
+ACTIVATED RULES
+[ rr11 - 0 ][ rr3 - 0 ][ rr1 - 0 ][ r02 - 0 ][ rr2 - 0 ][ r02 - 0 ][ r02 - 0 ][ r0 - 0 ][ r0 - 0 ][ r0 - 0 ][ r02 - 0 ][ r02 - 0 ]
+EXECUTED RULE
+rr10 - 0
 ===========CYCLE 30===============
 ACTIVATED RULES
-[ r13 - 13 ][ r13 - 13 ][ r13 - 13 ][ r0 - 0 ][ r0 - 0 ][ r02 - 0 ][ r02 - 0 ][ r0 - 0 ]
+[ r02 - 0 ][ rr3 - 0 ][ rr1 - 0 ][ r02 - 0 ][ rr2 - 0 ][ r02 - 0 ][ r02 - 0 ][ r0 - 0 ][ r0 - 0 ][ r0 - 0 ][ r02 - 0 ]
 EXECUTED RULE
-r30 - 30
-Execution time 18 ms
+rr11 - 0
+Execution time 9 ms
