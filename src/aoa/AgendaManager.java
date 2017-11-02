@@ -124,10 +124,12 @@ public class AgendaManager {
 
 	private void insertHeap(Rule r) {
 		inputList.add(r);
-		int i = inputList.size() ;
+		int i = inputList.size() -1;
 		boolean flag = false;
 		while(i > 1 && inputList.get(i/2).getPriority()  < r.getPriority()){
-			inputList.set(i-1, inputList.get(i/2));
+			Rule tmp = inputList.get(i);
+			inputList.set(i, inputList.get(i/2));
+			inputList.set(i/2, tmp);
 			i = i /2 ;
 			flag = true;
 		}
@@ -155,7 +157,9 @@ public class AgendaManager {
 	}
 	//remove rules from aganeda mamnger once executed
 	private void removeRule(int index) {
+		inputList.set(1, inputList.get(index));
 		inputList.remove(index);
+		
 	}
 
 	//max heapify
