@@ -24,6 +24,7 @@ public class AgendaManager {
 
 		final String dir = System.getProperty("user.dir");
 		String max = null;
+		boolean flag= false;
 		//Read file line by line
 		try (BufferedReader br = new BufferedReader(new FileReader(dir + "\\input1"))) {
 
@@ -31,7 +32,8 @@ public class AgendaManager {
 
 			while ((sCurrentLine = br.readLine()) != null) {
 				//  add rules to AgendaManager
-				addRules(sCurrentLine);
+				addRules(sCurrentLine, flag);
+				flag = true;
 				// find max and print it
 				max = extractMax();
 				System.out.println("===========CYCLE " + cycle + "===============");
@@ -55,43 +57,69 @@ public class AgendaManager {
 				cycle++;
 			}
 		} catch (IOException e) {
+		System.out.println("Error while reading the file "+e.getMessage());
+		}catch(Exception e){
+			System.out.println("Error in AgendaManager "+e.getMessage());
 			e.printStackTrace();
 		}
 
 	}
 
 	public static void main(String[] args) {
+		
 		long startTime = new Date().getTime();
 		new AgendaManager();
 		long endTime = new Date().getTime();
-		System.out.println((endTime- startTime));
+		System.out.println("Execution time "+(endTime- startTime)+" ms");
 
 	}
 	// adds rules to rule enngine
-	private void addRules(String rulesStr) {
-
+	private void addRules(String rulesStr , boolean flag) {
+        rulesStr = rulesStr + ",";
+        
+        
 		List<Rule> readLineList = new ArrayList<Rule>();
 		if (cycle == 0) {
 			readLineList.add(new Rule());
 
 		}
 		cycle++;
-		String[] currentLineArr = rulesStr.split("\\|");
+		String[] currentLineArr = rulesStr.split("(\\)\\,)");
 		for (String s : currentLineArr) {
 			Rule r = new Rule();
 			String strArr[] = s.split(",");
 			String str1 = strArr[0];
 			str1 = str1.trim();
-			r.setName(str1.substring(1));
+			String name = str1.substring(1);
+			if(name.length() > 5){
+				System.out.println(" Invalid Rule Name for rule "+name);
+				continue;
+			}
+			r.setName(name);
 			String str = strArr[1];
-			str = str.substring(0, str.length() - 1);
+			str = str.substring(0, str.length() );
 			str = str.trim();
 			r.setPriority(Integer.parseInt(str));
 			readLineList.add(r);
 		}
-		//build priority queue
-		buildQueue(readLineList);
+		if(!flag){
+			//build priority queue
+			buildQueue(readLineList);
+		}else{
+			for(Rule r : readLineList)
+				insertHeap(r);
+		}
+		
 
+	}
+
+	private void insertHeap(Rule r) {
+		inputList.add(r);
+		int i = inputList.size() ;
+		while(i > 1 && inputList.get(i/2).getPriority()  < r.getPriority()){
+			inputList.set(i-1, inputList.get(i/2));
+			i = i /2 ;
+		}
 	}
 
 	private void buildQueue(List<Rule> rulesList) {
