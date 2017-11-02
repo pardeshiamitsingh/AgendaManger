@@ -1,0 +1,83 @@
+Enter a test file number you want to execute: 1 = test1.txt, 2 = test2.txt, 3 = test3.txt 
+2
+===========CYCLE 1===============
+ACTIVATED RULES
+[ r2 - 2 ]
+EXECUTED RULE
+r15 - 15
+===========CYCLE 3===============
+ACTIVATED RULES
+[ r2 - 2 ]
+EXECUTED RULE
+r20 - 20
+===========CYCLE 5===============
+ACTIVATED RULES
+[ r2 - 2 ]
+EXECUTED RULE
+r100 - 100
+===========CYCLE 7===============
+ACTIVATED RULES
+[ r0 - 0 ]
+EXECUTED RULE
+r2 - 2
+===========CYCLE 9===============
+ACTIVATED RULES
+[ r103 - 100 ][ r102 - 100 ][ r0 - 0 ]
+EXECUTED RULE
+r100 - 100
+===========CYCLE 11===============
+ACTIVATED RULES
+[ r104 - 100 ][ r102 - 100 ][ r0 - 0 ]
+EXECUTED RULE
+r103 - 100
+===========CYCLE 13===============
+ACTIVATED RULES
+[ r105 - 100 ][ r102 - 100 ][ r0 - 0 ]
+EXECUTED RULE
+r104 - 100
+===========CYCLE 15===============
+ACTIVATED RULES
+[ r102 - 100 ][ r28 - 28 ][ r19 - 19 ][ r02 - 0 ][ r0 - 0 ]
+EXECUTED RULE
+r105 - 100
+===========CYCLE 17===============
+ACTIVATED RULES
+[ r35 - 35 ][ r28 - 28 ][ r19 - 19 ][ r02 - 0 ][ r0 - 0 ]
+EXECUTED RULE
+r102 - 100
+===========CYCLE 19===============
+ACTIVATED RULES
+[ r28 - 28 ][ r19 - 19 ][ r20 - 20 ][ r02 - 0 ][ r0 - 0 ]
+EXECUTED RULE
+r35 - 35
+===========CYCLE 21===============
+ACTIVATED RULES
+[ r20 - 20 ][ r19 - 19 ][ rule2 - 2 ][ r02 - 0 ][ r0 - 0 ]
+EXECUTED RULE
+r28 - 28
+===========CYCLE 23===============
+ACTIVATED RULES
+[ r19 - 19 ][ r16 - 16 ][ r19 - 19 ][ r02 - 0 ][ r0 - 0 ][ rule2 - 2 ][ r02 - 0 ]
+EXECUTED RULE
+r80 - 80
+===========CYCLE 25===============
+ACTIVATED RULES
+[ r19 - 19 ][ r16 - 16 ][ rule2 - 2 ][ r13 - 13 ][ r0 - 0 ][ r02 - 0 ][ r02 - 0 ]
+EXECUTED RULE
+r19 - 19
+===========CYCLE 27===============
+ACTIVATED RULES
+[ r16 - 16 ][ r13 - 13 ][ r16 - 16 ][ r13 - 13 ][ r0 - 0 ][ r02 - 0 ][ r02 - 0 ]
+EXECUTED RULE
+r100 - 100
+===========CYCLE 29===============
+ACTIVATED RULES
+[ r30 - 30 ][ r13 - 13 ][ r13 - 13 ][ r13 - 13 ][ r0 - 0 ][ r02 - 0 ][ r02 - 0 ][ r0 - 0 ][ r0 - 0 ]
+EXECUTED RULE
+r100 - 100
+===========CYCLE 30===============
+ACTIVATED RULES
+[ r13 - 13 ][ r13 - 13 ][ r13 - 13 ][ r0 - 0 ][ r0 - 0 ][ r02 - 0 ][ r02 - 0 ][ r0 - 0 ]
+EXECUTED RULE
+r30 - 30
+Execution time 18 ms

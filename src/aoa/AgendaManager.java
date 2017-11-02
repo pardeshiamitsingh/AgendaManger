@@ -7,6 +7,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Scanner;
 
 /**
  * 
@@ -19,18 +20,21 @@ public class AgendaManager {
 	int cycle = 0;
 
 	// constructer of Agenda manager
-	public AgendaManager() {
+	public AgendaManager(int n) {
 		URL url = getClass().getResource("input1.txt");
 
 		final String dir = System.getProperty("user.dir");
 		String max = null;
 		boolean flag= false;
+		String path = dir+ "\\test\\test"+n+".txt";
 		//Read file line by line
-		try (BufferedReader br = new BufferedReader(new FileReader(dir + "\\input1"))) {
+		try (BufferedReader br = new BufferedReader(new FileReader(path))) {
 
 			String sCurrentLine;
 
-			while ((sCurrentLine = br.readLine()) != null) {
+			while ((sCurrentLine = br.readLine()) != null && cycle <30 && inputList.size() <=300 ) {
+				if(sCurrentLine == null || sCurrentLine.isEmpty())
+					continue;
 				//  add rules to AgendaManager
 				addRules(sCurrentLine, flag);
 				flag = true;
@@ -43,9 +47,10 @@ public class AgendaManager {
 				System.out.println();
 				System.out.println("EXECUTED RULE");
 				System.out.println(max);
+				cycle++;
 			}
             
-			while(inputList.size() > 2){
+			while(inputList.size() > 2 &&  cycle <=30){
 				max = extractMax();
 				System.out.println("===========CYCLE " + cycle + "===============");
 				System.out.println("ACTIVATED RULES");
@@ -66,9 +71,13 @@ public class AgendaManager {
 	}
 
 	public static void main(String[] args) {
-		
+		Scanner reader = new Scanner(System.in);  // Reading from System.in
+		System.out.println("Enter a test file number you want to execute: 1 = test1.txt, 2 = test2.txt, 3 = test3.txt ");
+		int n = reader.nextInt(); // Scans the next token of the input as an int.
+		//once finished
+		reader.close(); 
 		long startTime = new Date().getTime();
-		new AgendaManager();
+		new AgendaManager(n);
 		long endTime = new Date().getTime();
 		System.out.println("Execution time "+(endTime- startTime)+" ms");
 
@@ -116,10 +125,14 @@ public class AgendaManager {
 	private void insertHeap(Rule r) {
 		inputList.add(r);
 		int i = inputList.size() ;
+		boolean flag = false;
 		while(i > 1 && inputList.get(i/2).getPriority()  < r.getPriority()){
 			inputList.set(i-1, inputList.get(i/2));
 			i = i /2 ;
+			flag = true;
 		}
+		if(flag)
+			inputList.set(i, r);
 	}
 
 	private void buildQueue(List<Rule> rulesList) {
